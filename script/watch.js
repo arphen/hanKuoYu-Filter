@@ -9,7 +9,7 @@ const contentFromPages = document.querySelector('#pagelet_timeline_main_column')
 const content = contentFromPosts || contentFromPages
 
 function removeElems () {
-  const articles = content.querySelectorAll(`div[id][role="article"]`)
+  const articles = content.querySelectorAll('div[id][role="article"]')
 
   function hasSensitiveWordInBlocklist (article) {
     return blocklist.some((sensitiveWord) => article.innerHTML.includes(sensitiveWord))
